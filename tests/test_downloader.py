@@ -44,7 +44,7 @@ class TestSubDownloaders(unittest.TestCase):
 
     def __init__(self, *args, **kwargs):
 
-        super().__init__(*args, **kwargs)
+        super(TestSubDownloaders, self).__init__(*args, **kwargs)
 
         self.subclasses = set()
         for file in os.listdir('getsub/downloader'):
